@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
     <title>Document</title>
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,42 +15,57 @@
         rel="stylesheet">
 </head>
 
-<body class="w-[100%] h-[100vh] fixed">
+<body class="w-full min-h-screen relative overflow-x-hidden">
+
+    <!-- Pattern Background -->
     <div
         class="absolute -right-10 bottom-0 w-full h-full bg-[url('../src/pattern.avif')] bg-cover bg-center -z-20 opacity-[5%]">
     </div>
-    <div class="bg-[#bcd1fe] w-90 h-90 absolute -left-30 -top-30 rounded-full -z-10"></div>
-    <!-- Container -->
-    <div class="absolute -right-10 bottom-0 w-[60%] h-120 bg-[url('../src/ngoding.png')] bg-cover bg-center -z-10">
+
+    <!-- Circle Background -->
+    <div class="bg-[#bcd1fe] w-72 h-72 md:w-90 md:h-90 absolute -left-32 -top-32 rounded-full -z-10"></div>
+
+    <!-- Illustration (Hidden on Mobile) -->
+    <div
+        class="hidden md:block absolute -right-10 bottom-0 w-[60%] h-[500px] bg-[url('../src/ngoding.png')] bg-cover bg-center -z-10">
     </div>
-    <div class="flex">
-        <div class="flex flex-col items-center h-[100vh] justify-center ml-10 w-10 text-center flex-wrap">
-            <h1 style="font-family: Changa One" class="font-mono text-6xl md:text-8xl lg:text-9xl 
-                bg-gradient-to-br from-[#8892f0] to-[#444ea7]       
-                bg-clip-text text-transparent leading-[0.85] ">
-                GROW LABTIF
+
+    <!-- Container -->
+    <div class="flex justify-center md:justify-start">
+
+        <div class="flex flex-col absolute items-center justify-center min-h-screen px-6 md:ml-10 text-center">
+
+            <!-- Title -->
+            <h1 style="font-family: 'Changa One', cursive"
+                class="text-4xl sm:text-6xl md:text-8xl lg:text-9xl
+                bg-gradient-to-br from-[#8892f0] to-[#444ea7]
+                bg-clip-text text-transparent leading-[0.85]">
+                GROW <br class="hidden md:block"> LABTIF
             </h1>
 
-            <!-- <h1 class="font-mono text-6xl md:text-8xl lg:text-9xl font-extrabold 
-                bg-gradient-to-br from-blue-500 to-orange-500        
-                bg-clip-text text-transparent leading-[0.85] mb-2">
-                
-            </h1> -->
+            <!-- Divider -->
+            <div class="h-1 w-60 md:w-[400px] bg-[#505abc] my-5 opacity-[70%]"></div>
 
-            <!-- <h1 class="absolute -z-10 font-mono text-4xl md:text-6xl lg:text-8xl font-extrabold text-foreground leading-[0.85] mb-20 text-[#505abc]/30">GROWLABTIF</h1> -->
-            <!-- garis -->
-            <div class="h-1 w-[400px] bg-[#505abc] my-5 opacity-[70%]"></div>
-            <p class="flex flex-wrap w-140 font-mono text-2xl text-center">Pilih path belajarmu. Bangun project
-                pertamamu. Tumbuh bersama komunitas.</p>
-            <!-- Tombol -->
+            <!-- Text -->
+            <p class="max-w-xs sm:max-w-md md:max-w-xl font-mono text-base sm:text-lg md:text-2xl text-center">
+                Pilih path belajarmu. Bangun project pertamamu. Tumbuh bersama komunitas.
+            </p>
+            
+
+            <!-- Button -->
             <a href="./daftarPath.html">
-                <div class="px-20 py-5 bg-[#6b76dd] rounded-2xl mt-10 hover:bg-[#505abc] text-white"><b>Lihat Path</b>
+                <div
+                    class="px-10 md:px-20 py-3 md:py-5 bg-[#6b76dd] rounded-2xl mt-8 md:mt-10 hover:bg-[#505abc] text-white transition">
+                    <b>Lihat Path</b>
                 </div>
             </a>
-        </div>
-        <div></div>
-    </div>
 
+        </div>
+    </div>
+    
+    <div
+        class="w-screen h-75 md:hidden absolute bottom-0 absolute bg-[url('../src/ngoding.png')] bg-cover bg-center">
+    </div>
 </body>
 
 </html>
