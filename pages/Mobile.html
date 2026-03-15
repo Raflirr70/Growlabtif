@@ -19,13 +19,11 @@
         </style>
 </head>
 
-<body class="flex w-[100%] h-screen items-center justify-center py-10 overflow-y-scroll snap-y snap-mandatory">
+
+<body class="flex h-screen items-center justify-center md:py-10 ">
     <div class="fixed bg-[url(../src/pattern.avif)] w-[100%] h-[100%] -z-1 opacity-[15%]"></div>
-    <div
-        class="absolute -right-10 bottom-0 w-full h-full bg-[url('../src/pattern.avif')] bg-cover bg-center -z-20 opacity-[5%]">
-    </div>
-    <div class="w-[70%] h-[100%] flex flex-col my-10 bg-amber-50 rounded-2xl">
-        <nav class="flex w-110 py-2 bg-[#1c3a72] [clip-path:polygon(0_0,90%_0,100%_50%,90%_100%,0_100%)]">
+    <div class="md:w-[70%] h-[100%] flex flex-col md:my-10 md:bg-amber-50 rounded-2xl">
+        <nav class="flex md:w-[50%] w-screen py-2 bg-[#1c3a72] md:[clip-path:polygon(0_0,90%_0,100%_50%,90%_100%,0_100%)]">
             <div class="flex items-center pl-10 flex-1 text-gray-300">
                 <a href="./index.html" class="hover:font-bold hover:text-white">GROWLABTIF</a>
                 <p class="mx-2 text-xl pb-1">></p>
@@ -35,33 +33,33 @@
             </div>
             <!-- <div class="flex justify-end item -->
         </nav>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center pb-20 pt-10 snap-start h-screen px-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 md:gap-10 items-center pb-20 pt-10 snap-start h-screen px-10 bg-amber-50 rounded-2xl">
 
             <!-- Keterangan -->
-            <div class="items-end">
-                <h2 style="font-family: Changa One" class="text-5xl mb-4 text-[#1c3a72] text-right">FLUTTER PROGRAMING
+            <div class="items-end order-2 md:order-1">
+                <h2 style="font-family: Changa One" class="text-5xl mb-4 text-[#1c3a72] text-center md:text-right">FLUTTER PROGRAMING
                 </h2>
-                <p class="text-gray-600 mb-4 text-right">
+                <p class="text-gray-600 mb-4 md:text-right">
                     Bangun aplikasi mobile menggunakan Flutter. Path ini fokus pada fundamental pengembangan frontend mobile, dari widget hingga state management dasar.
                 </p>
                 
                     <ul class="space-y-3">
-                        <li class="flex gap-3 justify-end">
+                        <li class="flex gap-3 md:justify-end">
                             Pengenalan Dart programming language
                             <span class="text-blue-500">✔</span>
                         </li>
 
-                        <li class="flex gap-3 justify-end">
+                        <li class="flex gap-3 md:justify-end">
                             Flutter widget system dan layout
                             <span class="text-blue-500">✔</span>
                         </li>
 
-                        <li class="flex gap-3  justify-end">
+                        <li class="flex gap-3  md:justify-end">
                             Navigation dan routing di Flutter
                             <span class="text-blue-500">✔</span>
                         </li>
 
-                        <li class="flex gap-3  justify-end">
+                        <li class="flex gap-3  md:justify-end">
                             State management dasar (setState & Provider)
                             <span class="text-blue-500">✔</span>
                         </li>
@@ -69,16 +67,16 @@
                 
             </div>
             <!-- Logo -->
-            <div class="flex justify-center">
+            <div class="flex justify-center order-1 md:order-2">
                 <img src="../src/uiux.png" alt="Path Logo" class="w-100 h-100 object-contain rounded-xl">
             </div>
         </div>
 
-        <<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center py-10 mt-10 snap-start h-screen bg-amber-50 rounded-2xl px-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center py-10 mt-10 bg-amber-50 rounded-2xl px-10">
 
             <!-- Logo -->
             <div class="flex justify-center">
-                <img src="../src/syarat.png" alt="Path Logo" class="w-75 h-75 object-contain rounded-xl">
+                <img src="../src/syarat.png" alt="Path Logo" class="w-50 h-50 md:w-75 md:h-75 object-contain rounded-xl">
             </div>
 
             <!-- Keterangan -->
@@ -118,10 +116,10 @@
         </div>
 
 
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center py-10 mt-10 mb-5 bg-amber-50 rounded-2xl px-10">
+        <div class="min-w-screen max-w-screen md:min-w-2xl md:max-w-6xl mx-auto grid md:grid-cols-2 md:gap-10 items-center md:pb-20 pb-10 md:pt-10 snap-start px-10 bg-amber-50 rounded-2xl mt-10">            <!-- Keterangan -->
             <!-- Keterangan -->
-            <div class="items-end">
-                <h2 style="font-family: Changa One" class="text-5xl mb-4 text-[#1c3a72] text-right">BENEFIT
+            <div class="items-end order-2 md:order-1">
+                <h2 style="font-family: Changa One" class="text-5xl mb-4 text-[#1c3a72] text-center md:text-right">BENEFIT
                 </h2>
                 <p class="text-gray-600 mb-4 text-right">
                     Melalui workshop ini, kamu tidak hanya belajar teori, tetapi juga mendapatkan pengalaman praktik langsung serta berbagai manfaat yang mendukung pengembangan skill di bidang web development.
@@ -135,7 +133,7 @@
                 </div>
             </div>
             <!-- Logo -->
-            <div class="flex justify-center">
+            <div class="flex justify-center order-1 md:order-2">
                 <img src="../src/benefit.png" alt="Path Logo" class="pt-20 w-100 h-100 object-contain rounded-xl">
             </div>
         </div>

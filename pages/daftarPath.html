@@ -2,226 +2,307 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Coiny&family=Freckle+Face&family=Joti+One&display=swap"
-        rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+
+<title>Growlabtif</title>
 </head>
 
-<body class="flex w-[100%] h-[100vh] items-center justify-center py-10">
-    <div class="fixed bg-[url(../src/pattern.avif)] w-[100%] h-[100%] -z-1 opacity-[15%]"></div>
-    <div
-        class="absolute -right-10 bottom-0 w-full h-full bg-[url('../src/pattern.avif')] bg-cover bg-center -z-20 opacity-[5%]">
-    </div>
-    <div class="w-[70%] h-[100%] flex flex-col my-10">
-        <nav class="flex w-110 py-2 bg-[#1c3a72] [clip-path:polygon(0_0,90%_0,100%_50%,90%_100%,0_100%)]">
-            <div class="flex items-center pl-10 flex-1 text-gray-300">
-                <a href="./index.html" class="hover:font-bold hover:text-white">GROWLABTIF</a>
-                <p class="mx-2 text-xl pb-1">></p>
-                <p class="font-bold text-white  ">Path</p>
-            </div>
-            <!-- <div class="flex justify-end item -->
-        </nav>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center py-16">
+<body class="min-h-screen flex justify-center py-10 relative">
 
-            <!-- Logo -->
-            <div class="flex justify-center">
-                <img src="../src/grow.png" alt="Path Logo" class="w-72 h-72 object-contain rounded-xl">
-            </div>
+<!-- background -->
+<div class="fixed inset-0 bg-[url('../src/pattern.avif')] bg-cover opacity-10 -z-10"></div>
 
-            <!-- Keterangan -->
-            <div>
-                <h2 style="font-family: Changa One" class="text-6xl mb-4 text-[#1c3a72]">GROWLABTIF</h2>
-                <p class="text-gray-600 mb-4">
-                    Growlabtif ini dirancang untuk membantu kamu belajar secara terstruktur dari dasar hingga dapat
-                    membuat sebuah project.
-                    Setiap tahap memiliki materi yang berbeda untuk meningkatkan skill kamu.
-                </p>
+<div class="w-full max-w-6xl px-4 flex flex-col">
 
-                <ul class="space-y-3">
-                    <li class="flex gap-3">
-                        <span class="text-blue-500">✔</span>
-                        Belajar dari dasar sampai advanced
-                    </li>
+<!-- NAVBAR -->
+<nav class="flex w-full md:w-[420px] py-2 bg-[#1c3a72] [clip-path:polygon(0_0,90%_0,100%_50%,90%_100%,0_100%)]">
+<div class="flex items-center pl-6 flex-1 text-gray-300 text-sm md:text-base">
+<a href="./index.html" class="hover:font-bold hover:text-white">GROWLABTIF</a>
+<p class="mx-2 text-xl pb-1">></p>
+<p class="font-bold text-white">Path</p>
+</div>
+</nav>
 
-                    <li class="flex gap-3">
-                        <span class="text-blue-500">✔</span>
-                        Materi berfokus pada pembuatan project
-                    </li>
+<!-- HERO -->
+<div class="grid md:grid-cols-2 gap-10 items-center py-16">
 
-                    <li class="flex gap-3">
-                        <span class="text-blue-500">✔</span>
-                        Project nyata untuk portfolio
-                    </li>
-                </ul>
-            </div>
+<!-- LOGO -->
+<div class="flex justify-center">
+<img src="../src/grow.png" class="w-40 h-40 md:w-72 md:h-72 object-contain rounded-xl">
+</div>
 
-        </div>
-        <div class="max-w-6xl mx-auto py-16 pt-20 ">
-            <h2 class="text-3xl font-bold text-center mb-10">
-                Our Popular Courses
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8 justify-items-center">
-                <!-- CARD 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <img src="../src/webdasar.png" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
-                            Web Development
-                        </span>
-                        <h3 class="text-lg font-semibold mt-2">
-                            Web Dasar (FrontEnd)
-                        </h3>
-                        <p id="desc1" class="text-gray-600 text-sm mt-2 line-clamp-2">
-                            Mempelajari cara membuat website modern menggunakan HTML, CSS dan
-                            JavaScript. Cocok untuk pemula dan design developer.
-                        </p>
-                        <button onclick="toggleText('desc1',this)" class="text-blue-500 text-sm mt-1">
-                            Show more
-                        </button>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="font-bold text-lg">Terbatas</span>
-                            <a href="WebDasar.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                                Lihat
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<!-- TEXT -->
+<div>
 
-                <!-- CARD 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <img src="../src/weblanjut.png" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">
-                            Web Development
-                        </span>
-                        <h3 class="text-lg font-semibold mt-2">
-                            Web Lanjutan (BackEnd)
-                        </h3>
-                        <p id="desc2" class="text-gray-600 text-sm mt-2 line-clamp-2">
-                            Mempelajari cara membuat website modern menggunakan Laravel, serta mendalami metode MVC
-                            Cocok untuk pemula dan design developer.
-                        </p>
-                        <button onclick="toggleText('desc2',this)" class="text-blue-500 text-sm mt-1">
-                            Show more
-                        </button>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="font-bold text-lg">Terbatas</span>
-                            <a href="WebLanjut.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                                Lihat
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<h2 style="font-family:Changa One"
+class="text-3xl md:text-6xl mb-4 text-[#1c3a72]">
+GROWLABTIF
+</h2>
 
-                <!-- CARD 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <img src="../src/uiux.png" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">
-                            UI/UX Design
-                        </span>
-                        <h3 class="text-lg font-semibold mt-2">
-                            Wireframing & Prototyping
-                        </h3>
-                        <p id="desc3" class="text-gray-600 text-sm mt-2 line-clamp-2">
-                            Belajar membuat wireframe dan prototype menggunakan Figma
-                            serta memahami alur desain produk digital yang efektif
-                            dan user friendly.
-                        </p>
-                        <button onclick="toggleText('desc3',this)" class="text-blue-500 text-sm mt-1">
-                            Show more
-                        </button>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="font-bold text-lg">Terbatas</span>
-                            <a href="UiUx.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                                Lihat
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<p class="text-gray-600 mb-4 text-sm md:text-base">
+Growlabtif ini dirancang untuk membantu kamu belajar secara terstruktur
+dari dasar hingga dapat membuat sebuah project.
+Setiap tahap memiliki materi yang berbeda untuk meningkatkan skill kamu.
+</p>
 
-                <!-- CARD 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <img src="../src/dataanalis.png" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">
-                            Data Analis
-                        </span>
-                        <h3 class="text-lg font-semibold mt-2">
-                            Python For Data Analyst
-                        </h3>
-                        <p id="desc4" class="text-gray-600 text-sm mt-2 line-clamp-2">
-                            Pelajari dasar Python untuk analisis data, visualisasi,
-                            serta pengolahan dataset menggunakan library seperti
-                            Pandas, Numpy, dan Matplotlib.
-                        </p>
-                        <button onclick="toggleText('desc4',this)" class="text-blue-500 text-sm mt-1">
-                            Show more
-                        </button>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="font-bold text-lg">Terbatas</span>
-                            <a href="DataAnalis.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                                Lihat
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<ul class="space-y-3 text-sm md:text-base">
 
-                <!-- CARD 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <img src="../src/mobile.png" class="w-full h-48 object-cover">
-                    <div class="p-5">
-                        <span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">
-                            Mobile Development
-                        </span>
+<li class="flex gap-3">
+<span class="text-blue-500">✔</span>
+Belajar dari dasar sampai advanced
+</li>
 
-                        <h3 class="text-lg font-semibold mt-2">
-                            Flutter Programming
-                        </h3>
+<li class="flex gap-3">
+<span class="text-blue-500">✔</span>
+Materi berfokus pada pembuatan project
+</li>
 
-                        <p id="desc5" class="text-gray-600 text-sm mt-2 line-clamp-2">
-                            Mempelajari dasar flutter untuk pembuatan aplikasi mobile. dan berfokus pada bagian FrontEnd
-                        </p>
-                        <button onclick="toggleText('desc5',this)" class="text-blue-500 text-sm mt-1">
-                            Show more
-                        </button>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="font-bold text-lg">Terbatas</span>
-                            <a href="Mobile.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                                Lihat
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<li class="flex gap-3">
+<span class="text-blue-500">✔</span>
+Project nyata untuk portfolio
+</li>
 
-    <!-- Block kiri -->
-    <!-- <div class="w-[200vh] h-[100vh] rounded-[30vh] fixed bg-amber-200 -right-125"></div> -->
+</ul>
 
-</body>
+</div>
+</div>
+
+<!-- COURSES -->
+<div class="py-16">
+
+<h2 class="text-2xl md:text-3xl font-bold text-center mb-10">
+Our Popular Courses
+</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- CARD 1 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img src="../src/webdasar.png" class="w-full h-48 object-cover">
+
+<div class="p-5">
+
+<span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
+Web Development
+</span>
+
+<h3 class="text-lg font-semibold mt-2">
+Web Dasar (FrontEnd)
+</h3>
+
+<p id="desc1" class="text-gray-600 text-sm mt-2 line-clamp-2">
+Mempelajari cara membuat website modern menggunakan HTML, CSS
+dan JavaScript. Cocok untuk pemula dan design developer.
+</p>
+
+<button onclick="toggleText('desc1',this)" class="text-blue-500 text-sm mt-1">
+Show more
+</button>
+
+<div class="flex justify-between items-center mt-4">
+
+<span class="font-bold text-lg">
+Terbatas
+</span>
+
+<a href="WebDasar.html"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+Lihat
+</a>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img src="../src/weblanjut.png" class="w-full h-48 object-cover">
+
+<div class="p-5">
+
+<span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">
+Web Development
+</span>
+
+<h3 class="text-lg font-semibold mt-2">
+Web Lanjutan (BackEnd)
+</h3>
+
+<p id="desc2" class="text-gray-600 text-sm mt-2 line-clamp-2">
+Mempelajari cara membuat website modern menggunakan Laravel
+serta mendalami metode MVC.
+</p>
+
+<button onclick="toggleText('desc2',this)" class="text-blue-500 text-sm mt-1">
+Show more
+</button>
+
+<div class="flex justify-between items-center mt-4">
+
+<span class="font-bold text-lg">
+Terbatas
+</span>
+
+<a href="WebLanjut.html"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+Lihat
+</a>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img src="../src/uiux.png" class="w-full h-48 object-cover">
+
+<div class="p-5">
+
+<span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">
+UI/UX Design
+</span>
+
+<h3 class="text-lg font-semibold mt-2">
+Wireframing & Prototyping
+</h3>
+
+<p id="desc3" class="text-gray-600 text-sm mt-2 line-clamp-2">
+Belajar membuat wireframe dan prototype menggunakan Figma
+serta memahami alur desain produk digital yang efektif.
+</p>
+
+<button onclick="toggleText('desc3',this)" class="text-blue-500 text-sm mt-1">
+Show more
+</button>
+
+<div class="flex justify-between items-center mt-4">
+
+<span class="font-bold text-lg">
+Terbatas
+</span>
+
+<a href="UiUx.html"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+Lihat
+</a>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 4 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img src="../src/dataanalis.png" class="w-full h-48 object-cover">
+
+<div class="p-5">
+
+<span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">
+Data Analyst
+</span>
+
+<h3 class="text-lg font-semibold mt-2">
+Python For Data Analyst
+</h3>
+
+<p id="desc4" class="text-gray-600 text-sm mt-2 line-clamp-2">
+Pelajari dasar Python untuk analisis data,
+visualisasi dan pengolahan dataset.
+</p>
+
+<button onclick="toggleText('desc4',this)" class="text-blue-500 text-sm mt-1">
+Show more
+</button>
+
+<div class="flex justify-between items-center mt-4">
+
+<span class="font-bold text-lg">
+Terbatas
+</span>
+
+<a href="DataAnalis.html"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+Lihat
+</a>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 5 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+<img src="../src/mobile.png" class="w-full h-48 object-cover">
+
+<div class="p-5">
+
+<span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">
+Mobile Development
+</span>
+
+<h3 class="text-lg font-semibold mt-2">
+Flutter Programming
+</h3>
+
+<p id="desc5" class="text-gray-600 text-sm mt-2 line-clamp-2">
+Mempelajari dasar flutter untuk pembuatan aplikasi mobile
+dan fokus pada frontend.
+</p>
+
+<button onclick="toggleText('desc5',this)" class="text-blue-500 text-sm mt-1">
+Show more
+</button>
+
+<div class="flex justify-between items-center mt-4">
+
+<span class="font-bold text-lg">
+Terbatas
+</span>
+
+<a href="Mobile.html"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+Lihat
+</a>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
 <script>
-    function toggleText(id, btn) {
+function toggleText(id,btn){
 
-        const text = document.getElementById(id)
+const text=document.getElementById(id)
 
-        if (text.classList.contains("line-clamp-2")) {
-            text.classList.remove("line-clamp-2")
-            btn.innerText = "Show less"
-        } else {
-            text.classList.add("line-clamp-2")
-            btn.innerText = "Show more"
-        }
+if(text.classList.contains("line-clamp-2")){
+text.classList.remove("line-clamp-2")
+btn.innerText="Show less"
+}else{
+text.classList.add("line-clamp-2")
+btn.innerText="Show more"
+}
 
-    }
+}
 </script>
 
+</body>
 </html>
